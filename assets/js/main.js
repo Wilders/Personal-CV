@@ -9,7 +9,7 @@ $(function() {
         selector: "#ghfeed"
     });
     levelbar.each(function() {
-        var itemWidth = $(this).data('level');
+        let itemWidth = $(this).data('level');
         $(this).animate({
             width: itemWidth
         }, 2500);
