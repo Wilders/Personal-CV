@@ -47,7 +47,10 @@ a:focus {
 }
 
 .btn:focus,a.btn:focus {
-    color: #fff
+    color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
 }
 
 .btn-cta-primary,a.btn-cta-primary {
@@ -62,6 +65,27 @@ a:focus {
     background: #49ac43;
     border: 1px solid #49ac43;
     color: #fff
+}
+
+.btn-cta-secondary,a.btn-cta-secondary {
+    background: #479fc8;
+    border: 1px solid #479fc8;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.btn-cta-secondary:hover,.btn-cta-secondary:not(:disabled):not(.disabled):active:focus,a.btn-cta-secondary:hover,a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
+    background: #3893bd;
+    border: 1px solid #3893bd;
+    color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+
+.text-highlight {
+    color: #32383e
 }
 
 .header {
@@ -105,10 +129,6 @@ a:focus {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    color: #fff;
     text-align: center
 }
 
@@ -162,11 +182,11 @@ a:focus {
     font-size: 12px
 }
 
-.latest .item .title a {
+.latest .item .title a,.projects .item .title a {
     color: #778492
 }
 
-.latest .item .title a:hover {
+.latest .item .title a:hover,.projects .item .title a:hover {
     color: #5f6b77
 }
 
@@ -249,11 +269,11 @@ a:focus {
     right: 0
 }
 
-.experience .item,.github-graph {
+.experience .item,.github-graph,.projects .item {
     margin-bottom: 30px
 }
 
-.experience .item .title {
+.experience .item .title,.projects .item .title {
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 5px;
@@ -300,7 +320,7 @@ a:focus {
     font-size: 14px
 }
 
-.info ul {
+.info ul,.testimonials .item .quote p {
     margin-bottom: 0
 }
 
@@ -320,7 +340,7 @@ a:focus {
     font-size: 16px;
     position: relative;
     margin-top: 0;
-    margin-bottom: 10
+    margin-bottom: 10px
 }
 
 .skills .skillset .level-title .level-label {
@@ -349,7 +369,7 @@ a:focus {
     top: -1px
 }
 
-.education .item {
+.education .item,.testimonials .item {
     margin-bottom: 30px
 }
 
@@ -379,7 +399,7 @@ a:focus {
     margin-bottom: 15px
 }
 
-.languages .item .title {
+.blog .item .title a,.credits ul li a,.languages .item .title,.list ul li a {
     color: #778492
 }
 
